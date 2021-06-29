@@ -3,7 +3,7 @@ from pymongo import MongoClient
 import datetime
 import os
 
-client = MongoClient("mongodb+srv://irfandahusni:1234abcd@irfndcluster.dhjmc.mongodb.net/irfanDB?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://<user>:<pass>@irfndcluster.dhjmc.mongodb.net/irfanDB?retryWrites=true&w=majority")
 
 dbCol = client.irfanDB.irfanCollection
 
