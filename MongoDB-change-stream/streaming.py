@@ -2,7 +2,7 @@ import os
 import pymongo
 from pymongo import MongoClient
 from bson.json_util import dumps
-client = MongoClient("mongodb+srv://irfandahusni:1234abcd@irfndcluster.dhjmc.mongodb.net/irfanDB?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://<user>:<pass>@irfndcluster.dhjmc.mongodb.net/irfanDB?retryWrites=true&w=majority")
 print("removing previous data ...")
 client.irfanDB.irfanCollection.delete_many( { } )
 try : 
